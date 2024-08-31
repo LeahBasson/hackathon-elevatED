@@ -1,0 +1,316 @@
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* custom variables */
+:root{
+    --primary: black;
+    --secondary: white;
+    --alternative: #4F1282;
+    --awesome: #B2ADB6;
+    --borderColor: #4F1282;
+    --spanColor: #D671FF;
+    --hoverColor: #5E2C89;
+}
+
+/* Navbar */
+img[alt='logo']{
+    width: 10rem;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: center;
+    transition: all .5s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.nav-link{
+    color: var(--secondary);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover{
+    color: var(--spanColor);
+}
+
+:is(.nav-link.active){
+    color: var(--spanColor) !important;
+}
+
+.navbar-scrolled {
+    background-color: var(--alternative);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.80);
+}
+
+.navbar{
+    z-index: 3;
+    transition: all 0.5s;
+}
+  
+/* ---------------------------------------------           Home Page       ---------------------------------------------------------- */
+/* Banner Section */
+.banner-gradient{
+    background-image: linear-gradient(80deg, #4F1282, #6D13BB);
+    background-size: cover;
+    background-position: center; 
+    overflow: hidden;
+    font-family: 'poppins';
+    z-index: 0;
+}
+
+.homeContent{
+    margin: 16rem auto 8rem;
+    position: relative;
+    z-index: 0;
+}
+
+.homeContent h2{
+    width: 52vw;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+    color: var(--secondary);
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.project-title{
+    z-index: 2;
+    width: 48vw;
+    padding: 2rem 12rem 2rem 8rem;
+    margin: auto;
+    position: relative;
+    border: 1px solid var(--secondary);
+}
+
+.btnBanner{
+    z-index: 2;
+    width: 10vw;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--alternative);
+    text-align: center;
+    position: relative;
+    color: var(--secondary);
+    border: 1px solid var(--awesome);
+}
+
+.btnBanner:hover{
+    background-color: var(--hoverColor);
+}
+
+.centerButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.project-title h1{
+    font-size: 7rem;
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.title-span{
+    color: var(--spanColor);
+    font-weight: 600;
+}
+
+.up{
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, #4F1282, #8D5499);
+    filter: blur(80px);
+    animation: down 40s infinite;
+    z-index: 0;
+}
+
+.down{
+    position: absolute;
+    right: 0;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, #222222,  #4F1282);
+    filter: blur(80px);
+    animation: up 30s infinite;
+    z-index: 0;
+}
+.left{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, #4F1282, #D671FF);
+    filter: blur(80px);
+    animation: left 30s 1s infinite;
+    z-index: 0;
+}
+.right{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, #ababab, #4F1282);
+    filter: blur(80px);
+    animation: right 40s .5s infinite;
+    z-index: 0;
+}
+
+@keyframes down{
+    0%, 100%{
+        top: -100px;
+    }
+    70%{
+        top: 700px;
+    }
+}
+@keyframes up{
+    0%, 100%{
+        bottom: -100px;
+    }
+    70%{
+        bottom: 700px;
+    }
+}
+@keyframes left{
+    0%, 100%{
+        left: -100px;
+    }
+    70%{
+        left: 1300px;
+    }
+}
+@keyframes right{
+    0%, 100%{
+        right: -100px;
+    }
+    70%{
+        right: 1300px;
+    }
+}
+
+/* Jobs Section */
+.jobs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.jobsText{
+    width: 44vw;
+    margin-top: 11rem;
+    margin-bottom: 2rem;
+}
+
+.jobsText h1{
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.jobsText p{
+    font-size: 1.3rem;
+    font-family: 'Poppins';
+    margin-top: 2rem;
+    color: var(--primary);
+}
+
+.button-top{
+    margin-top: 2rem;
+}
+
+.jobsImage{
+    width: 36vw;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+/*---------------------------------------- Home Cards Section  --------------------------------------------------------------*/
+
+#cards-home .card{
+    width: 18rem;
+    padding: 0;
+}
+
+#cards-home {
+    display: flex;
+    justify-content: center;
+}
+
+.btnGetStarted{
+    width: 10vw;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--alternative);
+    text-align: center;
+    color: var(--secondary);
+    border: 1px solid var(--awesome);
+}
+
+.btnGetStarted:hover{
+    background-color: var(--hoverColor);
+}
+
+/*---------------------------------------- Media query --------------------------------------------------------------*/
+@media (width < 999px)
+{ 
+    /* Banner Section */
+    .homeContent h2{
+        width: 52vw;
+        margin: auto;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .project-title{
+        width: 68vw;
+        padding: 1rem 2rem 1rem 2rem;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .project-title h1{
+        margin: auto;
+        font-size: 2.5rem;
+    }
+
+    .homeContent h2{
+        width: 69vw;
+    }
+
+    .homeContent{
+        margin: 12rem auto 12rem;
+    }
+
+    .homeContent .btnBanner{
+        width: 40vw;
+        padding: 0.5rem 1.3rem;
+    }
+
+    .offcanvas{
+        background-color: var(--alternative);
+    }
+
+    .offcanvas-body{
+        margin-left: 1rem;
+    }
+
+    /* Jobs Section */
+}
