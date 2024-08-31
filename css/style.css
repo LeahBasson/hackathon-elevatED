@@ -53,15 +53,23 @@ img[alt='logo']{
 }
 
 .navbar-scrolled {
+    z-index: 10; /* Keep a high z-index when scrolled */
     background-color: var(--alternative);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.80);
 }
 
 .navbar{
-    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10 !important; /* Ensure navbar is above other elements */
     transition: all 0.5s;
 }
   
+img[alt="elevateImage"]{
+    width: 28rem;
+    height: 48rem;
+}
 /* ---------------------------------------------           Home Page       ---------------------------------------------------------- */
 /* Banner Section */
 .banner-gradient{
@@ -108,6 +116,7 @@ img[alt='logo']{
     position: relative;
     color: var(--secondary);
     border: 1px solid var(--awesome);
+    border-radius: 0.3rem;
 }
 
 .btnBanner:hover{
@@ -245,13 +254,15 @@ img[alt='logo']{
 /*---------------------------------------- Home Cards Section  --------------------------------------------------------------*/
 
 #cards-home .card{
-    width: 18rem;
+    width: 20rem;
     padding: 0;
 }
 
 #cards-home {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 6rem;
+    margin-top: 6rem;
 }
 
 .btnGetStarted{
@@ -261,10 +272,208 @@ img[alt='logo']{
     text-align: center;
     color: var(--secondary);
     border: 1px solid var(--awesome);
+    border-radius: 0.3rem;
 }
 
 .btnGetStarted:hover{
     background-color: var(--hoverColor);
+}
+
+/* Card Overlay */
+#cards-home .card {
+    overflow: hidden;
+    font-family: "Poppins",sans-serif;
+}
+
+#cards-home .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+#cards-home .card-body {
+    z-index: 1;
+    text-align: left;
+}
+
+#cards-home .card-overlay:hover {
+    background: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+#cards-home.card-title, #cards-home.card-text, .btn {
+    color: white;
+}
+
+#cards-home .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#cards-home .card-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--alternative);
+    border: none;
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--secondary);
+}
+
+.btn-primary:hover {
+    background-color: var(--hoverColor);
+    border: 1px solid var(--secondary);
+}
+
+#cards-home .card-img-top{
+    width: 25rem;
+    height: 28rem;
+}
+
+.jobsText{
+    width: 44vw;
+    margin-top: 11rem;
+    margin-bottom: 2rem;
+}
+
+.jobsText h1{
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.jobsText p{
+    font-size: 1.3rem;
+    font-family: 'Poppins';
+    margin-top: 2rem;
+    color: var(--primary);
+}
+
+.alignmentElevateText{
+    margin-top: 16rem;
+}
+
+#interestedFields h1{
+    font-family: "Poppins",sans-serif;
+    color: var(--primary);
+    padding-left: 5rem;
+    padding-top: 3rem;
+    font-family: "Poppins",sans-serif;
+}
+
+.cardsInterested .card{
+    width: 20rem;
+    font-family: "Poppins",sans-serif;
+}
+
+.cardsInterested {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    gap: 6rem;
+    font-family: "Poppins",sans-serif;
+}
+
+#footer{
+    margin-top: 9rem;
+}
+
+.footer-gradient{
+    background-image: linear-gradient(80deg, #4F1282, #6D13BB);
+    background-size: cover;
+    background-position: center; 
+    overflow: hidden;
+    font-family: 'poppins';
+    z-index: 0;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+
+.leftSection{
+    width: 40rem;
+}
+
+.leftSection h2{
+    color: var(--secondary);
+}
+
+.rightSection{
+    width: 40rem;
+}
+
+.input-container {
+    position: relative;
+    width: 20vw;
+    margin-bottom: 1rem;
+}
+
+.input-container [type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: none; 
+    border-bottom: 1px solid var(--secondary);
+    font-size: 1rem;
+    outline: none;
+   background-color: var(--bgHeaderFooter);
+   font-weight: 500;
+   color: var(--secondary);
+   font-family: "Poppins", sans-serif;
+}
+
+#footerEmail::placeholder{
+    color: var(--secondary);
+}
+
+.form-alignment{
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.btnSubscribe{
+    border: none;
+    width: 1rem;
+    padding: 0.2rem 1rem;
+    background-color: transparent;
+    margin-top: -2rem;
+}
+
+#footer_error{
+    color: var(--secondary);
+}
+
+.social-icons{
+    color: var(--secondary);
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.rightSection{
+    display: flex;
+    justify-content: space-between;
+    color: var(--secondary);
+}
+
+.rightSection p:hover{
+    color: var(--spanColor);
+}
+
+.rightSection a{
+    text-decoration: none;
+    color: var(--secondary);
 }
 
 /*---------------------------------------- Media query --------------------------------------------------------------*/
@@ -313,4 +522,9 @@ img[alt='logo']{
     }
 
     /* Jobs Section */
+}
+
+@media (width > 1200px)
+{
+
 }

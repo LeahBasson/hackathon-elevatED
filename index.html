@@ -5,49 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ElevatED</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://leahbasson.github.io/MyImages/competitionProject/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
  
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="img-fluid" src="https://leahbasson.github.io/MyImages/competitionProject/finalLogoPNG.png" alt="logo" loading="eager"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="img-fluid" src="https://leahbasson.github.io/MyImages/competitionProject/finalLogoPNG.png" alt="logo" loading="eager"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active mx-lg-3" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-3" href="#">JOBS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-3" href="#">ELEVATE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-3" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-3" href="#">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
     <section class="container-fluid" id="banner">
       <div class="row">
         <div class="banner-gradient">
           <div class="homeContent">
-            <nav class="navbar navbar-expand-lg fixed-top">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="https://leahbasson.github.io/MyImages/competitionProject/finalLogoPNG.png" alt="logo" loading="eager"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                  <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="img-fluid" src="https://leahbasson.github.io/MyImages/competitionProject/finalLogoPNG.png" alt="logo" loading="eager"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  
-                  <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                      <li class="nav-item">
-                        <a class="nav-link active mx-lg-3" aria-current="page" href="#">HOME</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-lg-3" href="#">JOBS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-lg-3" href="#">ELEVATE</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-lg-3" href="#">ABOUT US</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-lg-3" href="#">CONTACT US</a>
-                      </li>
-                    </ul>
-                  </div>
-          
-                </div>
-              </div>
-            </nav>
+            
             <div class="project-title">
               <h1>elevat<span class="title-span">ED</span></h1>
             </div>
@@ -85,19 +90,127 @@
         </div>
       </section>
 
-      <section class="container-fluid" id="cards-home">
-        <div class="row">
-          <div class="card" style="width: 18rem;">
-            <img src="https://leahbasson.github.io/MyImages/competitionProject/homeImage2.jpg" class="card-img-top" alt="skillsImage">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+      <section class="container-fluid">
+        <div class="row" id="cards-home">
+            <div class="card">
+                <img src="https://leahbasson.github.io/MyImages/competitionProject/homeImage5.jpg" class="card-img-top img-fluid" alt="skillsImage">
+                <div class="card-overlay">
+                    <div class="card-body">
+                        <h5 class="card-title">Try a personality test</h5>
+                        <p class="card-text">Tests can suggest careers that match your personality type based on research and data.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
             </div>
-          </div>   
+            <div class="card">
+              <img src="https://leahbasson.github.io/MyImages/competitionProject/homeCard2.jpg" class="card-img-top img-fluid" alt="skillsImage">
+              <div class="card-overlay">
+                  <div class="card-body">
+                      <h5 class="card-title">Opportunity you might be interested in</h5>
+                      <p class="card-text">Search for the job of your choice and gather information about it.</p>
+                      <a href="#" class="btn btn-primary">Explore</a>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+            <img src="https://leahbasson.github.io/MyImages/competitionProject/homeImage6.png" class="card-img-top img-fluid" alt="skillsImage">
+            <div class="card-overlay">
+                <div class="card-body">
+                    <h5 class="card-title">Career fields</h5>
+                    <p class="card-text">You can select the career field that you are interested and see all the job openings for that field.</p>
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
         </div>
-      </section>
+        </div>
+    </section>
+    <section class="container-fluid" id="jobs">
+      <div class="row jobs">
+        <div class="jobsImage">
+          <img class="img-fluid" src="https://leahbasson.github.io/MyImages/competitionProject/homeImage8.jpeg" alt="elevateImage" loading="eager">
+        </div>
+        <div class="jobsText alignmentElevateText">
+          <h1>ELEVATE</h1>
+          <p>At elevatED, our workshop blogs serve as a vital 
+            resource for our community, offering valuable insights
+            into upcoming events and detailed previews of what 
+            each workshop entails. These blogs play a crucial role in
+            keeping our audience informed, engaged, and prepared
+            to make the most of every learning opportunity.</p>
+            <a href="#jobs"><button class="btnGetStarted">DISCOVER</button></a>
+        </div> 
+      </div>
+    </section>
+
+    <section class="container-fluid" id="interestedFields">
+      <div class="row">
+        <h1>SOME FIELDS YOU MIGHT BE INTERESTED IN</h1>
+        <div class="cardsInterested">
+          <div class="card">
+            <img src="https://leahbasson.github.io/MyImages/competitionProject/homeImage9.jpeg" class="card-img-top img-fluid" alt="cardImage1">
+            <div class="card-body">
+              <h5 class="card-title">Front-end developer</h5>
+              <a href="#" class="btn btn-primary">DISCOVER</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://leahbasson.github.io/MyImages/competitionProject/homeImage10.jpg" class="card-img-top img-fluid" alt="cardImage1">
+            <div class="card-body">
+              <h5 class="card-title">Hospitality</h5>
+              <a href="#" class="btn btn-primary">DISCOVER</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://leahbasson.github.io/MyImages/competitionProject/homeImage11.jpg" class="card-img-top img-fluid" alt="cardImage1">
+            <div class="card-body">
+              <h5 class="card-title">Cloud computing</h5>
+              <a href="#" class="btn btn-primary">DISCOVER</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     </main>
+
+    <footer class="container-fluid" id="footer">
+      <div class="row">
+       <div class="footer-gradient">
+        <div class="footer-content">
+          <div class="leftSection">
+            <h2>Sign up for our newsletter</h2>
+            <form action="https://formspree.io/f/mjvqdzra" method="POST" name="footerForm" class="form-alignment">
+                <div class="input-container">
+                  <input type="email" name="Email" placeholder="Enter your email address" id="footerEmail">
+                  <label id="footer_error"></label>
+                </div>
+                <button class="btnSubscribe text-white" id="subscribeButton" type="submit">→</button>    
+              </form>
+              <div class="social-icons">
+                <a class="lnk text-white href="mailto:your-email@example.com" alt="outlook icon" target="_blank"><i class="bi bi-envelope"></i></a>
+              <a class="lnk text-white href="https://www.linkedin.com/in/leah-basson-23a4192a0" alt="linkedin icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a class="lnk text-white href="https://github.com/LeahBasson/hackathon-elevatED.git" target="_blank"><i class="bi bi-github"></i></a>
+              </div>
+          </div>
+          <div class="rightSection">
+            <div class="pages">
+              <h3>Pages</h3>
+              <a href="index.html"><p>Home</p></a>
+              <a href="#"><p>Find your career</p></a>
+              <a href="#"><p>Opportunities</p></a>
+              <a href="#"><p>About Us</p></a>
+              <a href="#"><p>Contact Us</p></a>
+            </div>
+            <div class="about">
+              <h3>About Us</h3>
+              <a href="#"><p>Our mission</p></a>
+              <a href="#"><p>Team</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
 
 <!-- Bootstrap script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
