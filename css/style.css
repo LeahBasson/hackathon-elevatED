@@ -522,9 +522,55 @@ img[alt="elevateImage"]{
     }
 
     /* Jobs Section */
+    #jobs{
+        display: none;
+    }
+
+    #cards-home{
+        display: none;
+    }
+
+    #elevate{
+        display: none;
+    }
+
+    #interestedFields{
+        display: none;
+    }
+
+    #footer{
+        display:none
+    }
 }
 
-@media (width > 1200px)
-{
 
+@media screen and (min-width: 1200px)
+{
+    .project-title{
+        width: 100%;
+        padding: 1rem 2rem 1rem 2rem;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .btnGetStarted{
+        width: 30%;
+    }
+
+    #cards-home{
+        width: 98%;
+        gap: 0rem;
+        margin-right: -4rem;
+        margin-left: -4rem;
+        margin: auto;
+    }
+
+    .cardsInterested{
+        width: 95%;
+        gap: 0rem;
+        margin-right: -9rem;
+        margin-left: -9rem;
+        margin: auto;
+    }
 }
