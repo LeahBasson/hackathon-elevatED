@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top nav-color">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="https://leahbasson.github.io/MyImages/competitionProject/finalLogoPNG.png" alt="logo" loading="eager"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="img-fluid" src="https://leahbasson.github.io/MyImages/competitionProject/finalLogoPNG.png" alt="logo" loading="eager"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link mx-lg-3" aria-current="page" href="../index.html">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active mx-lg-3" href="./jobs.html">JOBS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mx-lg-3" href="./elevate.html">ELEVATE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mx-lg-3" href="./about.html">ABOUT US</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mx-lg-3" href="./contact.html">CONTACT US</a>
+                      </li>
+                    </ul>
+                  </div>
+          
+                </div>
+              </div>
+            </nav>
+  
+            <section class="container-fluid" id="jobs">
+              <div class="row">
+                  <div class="jobs-banner-image">
+                      <div class="overlay"></div>
+                      <div class="elevate-banner-content">
+                          <h1>Jobs</h1>
+                      </div>
+                  </div>
+              </div>
+          </section>  
+
+           <section class="opportunities container my-5">
+      <h1>Opportunity Openings</h1>
+<!--
+      <div class="search-container">
+        <div class="search-jobs">
+          <input type="text" id="searchInput"  class="search-Input" placeholder="Search for a company...">
+        </div>
+        
+        <div class="filter-jobs">
+          <select id="filterSelect" class="job-filters">
+            <option value="">Filter by industry</option>
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option>
+            <option value="category3">Category 3</option>
+        </select>
+        </div>
+        
+    </div>
+  -->
+      <div class="row text-center jobs-cards">
+        <div class="col-md-4 mb-4 p-3 mt-5">
+          <div class="card">
+            <img src="../images/eventIcon.png" class="card-img-top" alt="Picture of an event icon " />
+            <div class="card-body">
+              <h5 class="card-title">The event place</h5>
+              <p class="card-text">Event Co-ordinator</p>
+              <a href="#" class="btn btn-success">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mt-5">
+          <div class="card">
+            <img src="../images/webD.png" class="card-img-top" alt="Picture of web development" />
+            <div class="card-body">
+              <h5 class="card-title">Tech solutions</h5>
+              <p class="card-text">Front-End Developer</p>
+              <a href="#"class="btn btn-success">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mt-5">
+          <div class="card">
+            <img src="../images/modelIcon.png" class="card-img-top" alt="Modeling icon" />
+            <div class="card-body">
+              <h5 class="card-title">Exposure</h5>
+              <p class="card-text">Modeling</p>
+              <a href="#" class="btn btn-success">View </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <footer class="container-fluid" id="footer">
+        <div class="row">
+         <div class="footer-gradient">
+          <div class="footer-content">
+            <div class="leftSection">
+              <h2>Sign up for our newsletter</h2>
+              <form action="https://formspree.io/f/mjvqdzra" method="POST" name="footerForm" class="form-alignment">
+                  <div class="input-container">
+                    <input type="email" name="Email" placeholder="Enter your email address" id="footerEmail">
+                    <label id="footer_error"></label>
+                  </div>
+                  <button class="btnSubscribe text-white" id="subscribeButton" type="submit">→</button>    
+                </form>
+                <div class="social-icons">
+                  <a class="lnk text-white href="mailto:your-email@example.com" alt="outlook icon" target="_blank"><i class="bi bi-envelope"></i></a>
+                <a class="lnk text-white href="https://www.linkedin.com/in/leah-basson-23a4192a0" alt="linkedin icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a class="lnk text-white href="https://github.com/LeahBasson/hackathon-elevatED.git" target="_blank"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+            <div class="rightSection">
+              <div class="pages">
+                <h3>Pages</h3>
+                <a href="index.html"><p>Home</p></a>
+                <a href="#"><p>Find your career</p></a>
+                <a href="#"><p>Opportunities</p></a>
+                <a href="#"><p>About Us</p></a>
+                <a href="#"><p>Contact Us</p></a>
+              </div>
+              <div class="about">
+                <h3>About Us</h3>
+                <a href="#"><p>Our mission</p></a>
+                <a href="#"><p>Team</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </footer>
+
+</body>
+</html>

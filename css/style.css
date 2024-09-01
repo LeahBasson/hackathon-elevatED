@@ -24,6 +24,10 @@
     --hoverColor: #5E2C89;
 }
 
+.nav-color{
+    background-color: var(--alternative);
+}
+
 /* Navbar */
 img[alt='logo']{
     width: 10rem;
@@ -337,6 +341,20 @@ img[alt="elevateImage"]{
     height: 28rem;
 }
 
+/* Jobs Section */
+.job-banner{
+    background-image: url(/images/jobsBanner.png);
+    padding:150px;
+    margin-top:100px ;
+}
+
+.jobs-text{
+color:white;
+    font-size: 96px;
+    font-weight: bolder;
+    text-align: center;
+}
+
 .jobsText{
     width: 44vw;
     margin-top: 11rem;
@@ -476,6 +494,234 @@ img[alt="elevateImage"]{
     color: var(--secondary);
 }
 
+ /*------------------------ Jobs Page --------------------*/
+ .opportunities .btn-success{
+    background-color: #4F1282 !important;
+    border: none;
+} 
+.opportunities .btn-success:hover{
+   background-color: #604676 !important;
+   border: none; 
+}
+
+.jobs-cards .card {
+    width: 20rem;
+}
+
+#about-banner{
+    position: relative;
+    z-index: 0;
+}
+
+.about-banner-image{
+    position: relative;
+    background-image: url('/images/aboutBanner.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+#jobs{
+    position: relative;
+    z-index: 0;
+}
+
+.jobs-banner-image{
+    position: relative;
+    background-image: url('/images/jobsBanner.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Grey color with 50% opacity */
+    z-index: 1; /* Ensure it's above the background content */
+}
+
+.jobs-banner-content{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    z-index: 2;
+    margin: 20rem auto 20rem;
+    width: 48vw;
+    text-align: center;
+}
+
+.jobs-banner-content h1{
+    color: var(--secondary);
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.about-banner-content{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    z-index: 2;
+    margin: 20rem auto 20rem;
+    width: 48vw;
+    text-align: center;
+}
+
+.about-banner-content h1{
+    color: var(--secondary);
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+#elevate{
+    position: relative;
+    z-index: 0;
+}
+
+.elevate-banner-image{
+    position: relative;
+    background-image: url("https://leahbasson.github.io/MyImages/competitionProject/elevateBanner.png");
+    background-size: cover;
+    background-position: center; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Grey color with 50% opacity */
+    z-index: 1; /* Ensure it's above the background content */
+}
+
+.elevate-banner-content{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    z-index: 2;
+    margin: 20rem auto 20rem;
+    width: 48vw;
+    text-align: center;
+}
+
+.elevate-banner-content h1{
+    color: var(--secondary);
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.sub-title{
+    font-size: 1.2rem;
+}
+
+#elevate-header h1{
+    color: var(--primary);
+    font-family: "Poppins", sans-serif;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-left: 5rem;
+}
+
+#elevate-firstContent h1{
+    color: var(--primary);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.cards-elevate .card-title{
+    font-weight: 700;
+}
+
+#elevate-firstContent {
+    margin-top: 3rem;
+}
+
+.cards-elevate{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+    font-family: "Poppins",sans-serif;
+    color: var(--primary);
+}
+.cards-elevate .card{
+    width: 18rem;
+    text-align: center;
+}
+
+.btnDiscover {
+    width: 10vw;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--alternative);
+    text-align: center;
+    color: var(--secondary);
+    border: 1px solid var(--awesome);
+    border-radius: 0.3rem;
+    text-decoration: none;
+}
+
+.btnDiscover:hover{
+    background-color: var(--hoverColor);  
+}
+
+.second-top{
+    padding-top: 5rem;
+}
+
+.about-page{
+    width: 90%;
+    margin: auto;
+  }
+  .about-page p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .about-heading {
+    color: var(--alternative);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+  .about-banner {
+    background-image: url(/images/aboutBanner.png);
+    padding: 150px;
+    margin-top: 100px;
+  }
+
+  .contact-us {
+    background-color: var(--alternative);
+    text-align: center;
+    color: var(--secondary);
+    font-family: "Poppins", sans-serif;
+  }
+
+  .contact-us h1{
+    margin: 21rem auto 20rem;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  #contactForm {
+    width: 80%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    padding-top: 4rem;
+  }
+
+  .contact-button{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* .formDiv .form-control {
+    width: 70%;
+    margin: auto;
+  } */
+
 /*---------------------------------------- Media query --------------------------------------------------------------*/
 @media (width < 999px)
 { 
@@ -544,7 +790,7 @@ img[alt="elevateImage"]{
 }
 
 
-@media screen and (min-width: 1200px)
+@media (width = 1200px)
 {
     .project-title{
         width: 100%;
@@ -572,5 +818,12 @@ img[alt="elevateImage"]{
         margin-right: -9rem;
         margin-left: -9rem;
         margin: auto;
+    }
+
+    #elevate-header h1{
+        color: var(--primary);
+        font-family: "Poppins", sans-serif;
+        padding-top: 2rem;
+        padding-left: 2rem;
     }
 }

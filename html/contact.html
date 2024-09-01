@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top nav-color">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img class="img-fluid" src="https://leahbasson.github.io/MyImages/competitionProject/finalLogoPNG.png" alt="logo" loading="eager"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -27,19 +27,19 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active mx-lg-3" aria-current="page" href="#">HOME</a>
+                  <a class="nav-link active mx-lg-3" aria-current="page" href="../index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-3" href="#">JOBS</a>
+                  <a class="nav-link mx-lg-3" href="./jobs.html">JOBS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-3" href="#">ELEVATE</a>
+                  <a class="nav-link mx-lg-3" href="./elevate.html">ELEVATE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-3" href="#">ABOUT US</a>
+                  <a class="nav-link mx-lg-3" href="./about.html">ABOUT US</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-3" href="#">CONTACT US</a>
+                  <a class="nav-link mx-lg-3" href="./contact.html">CONTACT US</a>
                 </li>
               </ul>
             </div>
@@ -48,13 +48,90 @@
         </div>
       </nav>
 
-      <section class="container-fluid" id="aboutBanner">
+      <section class="container-fluid" id="elevate">
         <div class="row">
-          <div class="womensOverlay"></div>
-          <div class="contactBannerImage" loading="eager">
-            <div class="adminText">
-              <div class="adminHeading text-white">Contact Us</div>
+            <div class="contact-us">
+              <h1>Contact Us</h1>
+            </div>
+            <form id="contactForm" method="POST" action="https://formspree.io/f/mjvqdzra" name="myForm">
+              <div class="row">
+                  <div class="col formDiv">
+                      <div class="form-group">
+                        <label class="labelText">Enter your name:</label>
+                          <!-- Name input-->
+                          <input class="form-control" id="name" type="text" name="Name" placeholder="Name" input/>
+                          <label id="name_error" class="contact-label"></label>
+                      </div>
+                      <div class="form-group">
+                        <label class="labelText">Enter your email address:</label>
+                          <!-- Email address input-->
+                          <input class="form-control" id="email" type="email" name="Email" placeholder="Email address"/>
+                          <label id="email_error" class="contact-label"></label>
+                      </div>
+                      <div class="form-group mb-md-0">
+                        <label class="labelText">Enter your phone number:</label>
+                          <!-- Phone number input-->
+                          <input class="form-control" id="phone" type="tel" name="cell" placeholder="Phone number"/>
+                          <label id="phone_error" class="contact-label"></label>
+                      </div>
+                      <div class="form-group form-group-textarea mb-md-0">
+                        <label class="labelText">Enter your inquiry:</label>
+                        <!-- Message input-->
+                        <textarea class="form-control mb-2" id="message" name="Message" placeholder="Message"></textarea>
+                        <label id="message_error" class="contact-label"></label>
+                    </div>
+                  </div>
+      
+              </div>
+            
+              <!-- Submit Button-->
+    <div class="text-center mb-2 contact-button">
+      <button class="btnGetStarted" id="submitButton" type="submit" submit>SUBMIT</button>
+      <button class="btnGetStarted" id="clearButton" type="reset">CLEAR</button>
+    </div>
+          </form>
+        </div>
+    </section>
+    
+    <footer class="container-fluid" id="footer">
+      <div class="row">
+       <div class="footer-gradient">
+        <div class="footer-content">
+          <div class="leftSection">
+            <h2>Sign up for our newsletter</h2>
+            <form action="https://formspree.io/f/mjvqdzra" method="POST" name="footerForm" class="form-alignment">
+                <div class="input-container">
+                  <input type="email" name="Email" placeholder="Enter your email address" id="footerEmail">
+                  <label id="footer_error"></label>
+                </div>
+                <button class="btnSubscribe text-white" id="subscribeButton" type="submit">→</button>    
+              </form>
+              <div class="social-icons">
+                <a class="lnk text-white href="mailto:your-email@example.com" alt="outlook icon" target="_blank"><i class="bi bi-envelope"></i></a>
+              <a class="lnk text-white href="https://www.linkedin.com/in/leah-basson-23a4192a0" alt="linkedin icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a class="lnk text-white href="https://github.com/LeahBasson/hackathon-elevatED.git" target="_blank"><i class="bi bi-github"></i></a>
+              </div>
+          </div>
+          <div class="rightSection">
+            <div class="pages">
+              <h3>Pages</h3>
+              <a href="index.html"><p>Home</p></a>
+              <a href="#"><p>Find your career</p></a>
+              <a href="#"><p>Opportunities</p></a>
+              <a href="#"><p>About Us</p></a>
+              <a href="#"><p>Contact Us</p></a>
+            </div>
+            <div class="about">
+              <h3>About Us</h3>
+              <a href="#"><p>Our mission</p></a>
+              <a href="#"><p>Team</p></a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      </div>
+    </footer>
+
+    <script src="../script/contact.js"></script>
+  </body>
+  </html>
